@@ -1,0 +1,25 @@
+/* Define your color classes in CSS (or Tailwind config) */
+.bg-sunny {
+    background: linear-gradient(135deg, #FDB813, #FDB813);
+  }
+  
+  .bg-cloudy {
+    background: linear-gradient(135deg, #D3D3D3, #808080);
+  }
+  
+  .bg-rainy {
+    background: linear-gradient(135deg, #1E90FF, #00008B);
+  }
+  
+  .bg-snowy {
+    background: linear-gradient(135deg, #B0E0E6, #F0FFFF);
+  }
+  
+  .bg-default {
+    background: linear-gradient(135deg, #FF7F50, #FF4500);
+  }
+  
+  .bg-loading {
+    background: linear-gradient(135deg, #808080, #A9A9A9);
+  }
+  
