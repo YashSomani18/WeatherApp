@@ -21,7 +21,7 @@ const WeatherIcon = ({ weatherMain }) => {
 };
 
 const getIconSize = () => {
-  let iconSize = "81px"; // Default icon size
+  let iconSize = "81px"; 
 
   if (window.innerWidth <= 768) {
     iconSize = "64px";
