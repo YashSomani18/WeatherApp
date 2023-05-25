@@ -12,7 +12,7 @@ import { ImSpinner8 } from "react-icons/im";
 
 const App = () => {
   const [data, setData] = useState(null);
-  const [location, setLocation] = useState("Vishakhapatnam");
+  const [location, setLocation] = useState("Delhi");
   const [inputValue, setInputValue] = useState("");
   const [animate, setAnimate] = useState(false);
   const [loading, setLoading] = useState(false);
