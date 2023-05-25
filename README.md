@@ -20,7 +20,10 @@ The Weather App is a web-based application that allows users to search for a spe
 - Search functionality for cities, countries, and zip codes
 - Added animation to it when you enter or press search button without typing anything into it, it shakes to alert you about it.
 - Pressing on the temperature will give you forecast details of next 3 days in 6 hours manner
-- 
+- background color changes according to the weather detail
+- It gives 8 extra details about the weather
+- UI made responsive for small as well as large size devices to work seamlessly
+- Search on basis of zip code as well as name of the city also.
 
 ## Technologies
 
