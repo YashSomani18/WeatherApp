@@ -1,6 +1,9 @@
 # weather-app-starter
 
-To get more detailed information about everything please refer this document https://docs.google.com/document/d/1Y0dXhUKSQsLNHDVsk99sVutw0nQqaT3zSTWUMonV1r4/edit?usp=sharing
+Live Deployed Website links:
+https://strong-cobbler-8c90c8.netlify.app/
+
+To get more detailed information about everything please refer this document: https://docs.google.com/document/d/1Y0dXhUKSQsLNHDVsk99sVutw0nQqaT3zSTWUMonV1r4/edit?usp=sharing
 
 # Weather App
 A simple weather application that provides current weather information and a 3-day forecast for a given location.
