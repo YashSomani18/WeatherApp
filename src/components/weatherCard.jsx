@@ -53,7 +53,7 @@ const WeatherCard = ({ data, handleForecast, date }) => {
             />
           </div>
 
-          <div className="lg:flex lg:justify-between mb-4 ml-4 transition-all duration-200 ease-in-out">
+          <div className="lg:flex lg:justify-between mb-4 ml-4 transform transition-transform duration-200 hover:scale-105">
             <WeatherData
               title="Visibility"
               data={data.visibility / 1000}
@@ -68,7 +68,7 @@ const WeatherCard = ({ data, handleForecast, date }) => {
             />
           </div>
 
-          <div className="lg:flex lg:justify-between mb-4 ml-4 transition-all duration-200 ease-in-out">
+          <div className="lg:flex lg:justify-between mb-4 ml-4 transform transition-transform duration-200 hover:scale-105">
             <WeatherData
               title="Min Temp"
               data={`${data.main.temp_min}°C`}
@@ -83,7 +83,7 @@ const WeatherCard = ({ data, handleForecast, date }) => {
             />
           </div>
 
-          <div className="lg:flex lg:justify-between mb-4 ml-4 transition-all duration-200 ease-in-out">
+          <div className="lg:flex lg:justify-between mb-4 ml-4 transform transition-transform duration-200 hover:scale-105">
             <WeatherData
               title="Wind Speed"
               data={data.wind.speed}
