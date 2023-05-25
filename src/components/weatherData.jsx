@@ -1,6 +1,6 @@
 import React from 'react';
 const WeatherData = ({ title, data, unit, icon: IconComponent, suffix }) => (
-    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-x-2">
+    <div className="flex text-sm sm:text-base md:text-lg flex-col md:flex-row items-center gap-4 md:gap-x-2">
       {/* Weather icon */}
       <div className="text-2xl md:text-20px">
         <IconComponent />
