@@ -16,9 +16,11 @@ The Weather App is a web-based application that allows users to search for a spe
 
 - Real-time weather data retrieval
 - Current weather information display
-- 5-day forecast display
+- 3-day forecast display
 - Search functionality for cities, countries, and zip codes
-- Responsive design for mobile and desktop devices
+- Added animation to it when you enter or press search button without typing anything into it, it shakes to alert you about it.
+- Pressing on the temperature will give you forecast details of next 3 days in 6 hours manner
+- 
 
 ## Technologies
 
