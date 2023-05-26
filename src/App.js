@@ -21,7 +21,8 @@ const App = () => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  
+  const handleSubmit = async (e) => {
     if (inputValue !== "") {
       setLocation(inputValue);
     }
@@ -38,52 +39,43 @@ const App = () => {
   };
 
   useEffect(() => {
-    setLoading(true);
+    const fetchWeatherData = async () => {
+      setLoading(true);
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&q=${location}&units=metric&appid=${API_KEY}`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&q=${location}&units=metric&appid=${API_KEY}`;
 
-    axios
-      .get(url)
-      .then((res) => {
+      try {
+        const res = await axios.get(url);
         setTimeout(() => {
           setData(res.data);
           setLoading(false);
         }, 85);
-      })
-      .catch((err) => {
+      } catch (err) {
         setLoading(false);
         setErrorMsg(err.message);
-      });
+      }
+    };
+
+    fetchWeatherData();
   }, [location]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setErrorMsg("");
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, [errorMsg]);
-
-  const handleForecast = () => {
+  const handleForecast = async () => {
     setLoading(true);
     setErrorMsg("");
     setForecastData(null);
     setShowSearchButton(true);
 
-    axios
-      .get(
+    try {
+      const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${API_KEY}`
-      )
-      .then((res) => {
-        setLoading(false);
-        setForecastData(res.data);
-      })
-      .catch((err) => {
-        setLoading(false);
-        setErrorMsg(err.message);
-      });
+      );
+      setLoading(false);
+      setForecastData(res.data);
+    } catch (err) {
+      setLoading(false);
+      setErrorMsg(err.message);
+    }
   };
-
   const handleSearchButton = () => {
     setShowSearchButton(false);
   };
